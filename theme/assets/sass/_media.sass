@@ -1,0 +1,738 @@
+@media only screen and (max-width : 1440px)
+	.container
+		max-width: 1200px
+
+	.soc
+		padding: 5px
+		font-size: 14px
+		transform: translate(-44%,-50%) rotate(-90deg)
+
+	.hero
+		padding: 130px 0
+
+		&__bg
+			transform: translate(0, -50%)
+			height: 150%
+
+
+		&__sub-title
+			margin-bottom: 40px
+
+	.project
+		padding: 100px 0
+
+		&__col
+			padding: 30px !important
+
+	.shop__list
+		width: 75%
+
+	.info__wrap
+		padding: 60px
+	
+
+@media only screen and (max-width : 1200px)
+	body
+		font-size: 14px
+
+	h1
+		font-size: 36px
+
+	h2
+		font-size: 30px !important
+
+	h3
+		font-size: 20px
+
+
+	.container
+		max-width: 992px
+
+
+	.about
+
+		h3
+			margin-bottom: 15px
+
+		&__col
+			padding: 20px
+
+	.footer
+		padding: 15px 0
+
+		&__container
+			padding: 25px 10px
+
+	.hero
+		padding: 100px 0
+
+		&__bg
+			left: 45%
+
+	.project
+		padding: 60px 0
+
+		p
+			font-size: 16px
+			line-height: 1.7
+
+	.shop
+		&__list
+			width: 83%
+
+	.info
+		padding: 40px 0
+
+		&__wrap
+			padding: 30px
+
+		&__bg
+			height: 120%
+			left: 70%
+
+	.contacts
+		&__info
+			max-width: 30%
+
+			h3
+				margin-bottom: 15px
+
+		&__form
+			max-width: 65%
+			padding: 25px
+
+			&_line
+				margin-bottom: 15px
+
+			&_btn
+				right: 10px
+				bottom: 10px
+
+	.btn
+		font-size: 20px
+		height: 50px
+		max-width: 150px
+
+	.cabinet
+		&__container
+			justify-content: space-between
+
+		&__nav
+			width: 30%
+			margin-right: 0
+
+			a
+				padding: 10px
+
+		&__content
+			padding: 15px
+			width: 68%
+
+		.btn
+			max-width: fit-content
+	
+		h4
+			font-size: 20px
+			margin-bottom: 15px
+
+		&__line
+			margin-bottom: 15px
+
+		&__block
+			margin-bottom: 25px
+
+	.woocommerce-orders-table
+		width: 68%
+
+		td, th
+			padding: 10px
+			font-size: 12px
+
+	.cart
+		margin-bottom: 35px
+
+		&__img
+			margin-bottom: 10px
+
+		&__price
+			font-size: 20px
+			padding: 0
+			margin-bottom: 10px
+
+		&__wrap
+			padding: 0
+			align-items: center
+
+
+@media only screen and (max-width : 992px)
+	body
+		font-size: 14px
+
+	.container
+		max-width: 767px
+
+	.header
+		padding: 5px 0
+
+		&__logo
+			width: 54px
+			margin-right: 10px
+
+		&__nav
+			li
+				padding: 15px 0
+
+				ul
+					padding: 15px
+					width: 400px
+
+					a
+						padding: 15px
+
+		&__info_wrap
+			width: 30px
+			height: 30px
+			margin-right: 10px
+
+		&__cart,
+		&__hard
+			span
+				right: 3px
+
+		&__login
+			font-size: 18px
+
+		&__search
+			&:focus, 
+			&:hover
+				form
+					right: 27px
+
+	.hero
+		h1,
+		p
+			max-width: 400px
+
+	.project h2
+		margin-bottom: 15px
+
+	.shop
+
+		&__category
+			width: 22%
+
+			h2
+				margin-bottom: 35px
+
+			a
+				max-width: 100%
+
+				&::before
+					font-size: 24px
+					line-height: .8
+
+			li
+				margin-bottom: 10px
+
+		&__list
+			width: 75%
+
+	.cart
+		width: 50%
+
+	.info p
+		max-width: 500px
+
+
+@media only screen and (max-width : 767px)
+	.container
+		max-width: 576px
+
+	h3
+		font-size: 18px
+
+	.main
+		margin-top: 71px
+
+	.hamburger
+		display: block
+
+	.header
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+
+		&__container
+			padding-left: 60px
+
+		&__nav li ul
+			max-height: 250px
+			min-height: 250px
+
+			li
+
+			a
+				padding: 5px 40px
+
+				&:hover,
+				&:focus
+					span
+						right: 5px
+
+	.nav
+		position: fixed
+		width: 100vw
+		height: 100vh
+		top: -100%
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $bg
+		flex-direction: column
+		align-items: center
+		text-align: center
+		padding: 
+			top: 40px
+			left: 40px
+			right: 40px
+			bottom: 90px
+		transition: all .6s
+		z-index: 100
+		overflow: auto
+		
+		a
+			font-size: 18px
+
+		li
+			margin-right: 0
+			position: relative
+
+			ul
+				left: 50%
+				transform: translate(-50%, 0)
+				z-index: 1
+
+		&--active
+			top: 72px
+
+	.about
+		h3
+			margin-bottom: 10px
+
+		&__col
+			width: 100%
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+	.footer
+
+		a, p
+			width: 48%
+			margin-bottom: 10px
+
+			&:last-child
+				margin-bottom: 0
+
+		&__container
+			justify-content: space-around
+			text-align: center
+	
+	.hero
+		padding: 50px 0
+
+		h1, p
+			max-width: 345px
+
+		&__sub-title
+			margin-bottom: 15px
+
+		&__info
+			p
+				margin-bottom: 15px
+
+	.project
+		padding: 40px 0
+
+		p
+			font-size: 14px
+
+		&__col
+			width: 100% !important
+
+		&__question
+			top: auto
+			right: auto
+			left: 50%
+			top: 100%
+			transform: translate(-50%, -50%)
+			width: 60px
+			height: 60px
+			line-height: 60px
+			font-size: 36px
+
+
+	.cart
+		padding: 0 10px
+
+	.info
+		h2
+			margin-bottom: 15px
+
+		&__bg
+			display: none
+
+	.cabinet
+		padding: 20px 0
+
+		&__content
+			.form-row
+				margin-bottom: 15px
+
+
+		.btn
+			max-width: 100%
+
+
+	.woocommerce-orders-table
+		
+		tr, td
+			display: block
+
+		thead
+			display: none
+
+		tr
+			padding: 10px 0
+			border-top: 1px solid $gray
+
+		td
+			padding: 5px
+
+	.order
+		h2
+			font-size: 20px !important
+
+		.product-thumbnail
+			width: 80px
+			
+			img
+				width: 60px
+
+		.tinvwl-table-manage-list			
+
+			.product-thumbnail
+				padding: 0
+
+				img
+					width: 60px
+
+			.product-remove
+				padding: 0
+				position: absolute
+				right: 0
+
+			.tinv-wishlist
+				table
+					td,
+					th
+						padding: 4px
+
+				thead
+					display: none
+
+				tr
+					position: relative
+		
+			.product-name,
+			.product-price,
+			.product-date,
+			.product-stock
+				background-color: #fff
+
+			.product-name
+				border-top-left-radius: 0
+				border-bottom-left-radius: 0
+
+			.product-stock
+				border-top-right-radius: 0
+				border-bottom-right-radius: 0
+
+		table.tinvwl-table-manage-list tbody td
+			display: flex !important
+			justify-content: center
+
+		table.tinvwl-table-manage-list tbody td
+			width: auto !important
+
+	.woocommerce
+		&__product-name
+			.variation
+				margin-left: 5px
+				margin-bottom: 0
+
+
+		&__checkout_col
+			width: 100%
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+
+@media only screen and (max-width : 576px)
+	.container
+		max-width: 100%
+
+	input,
+	textarea
+		font-size: 14px
+
+		&::placeholder
+			font-size: 14px
+
+	input
+		height: 45px
+		line-height: 45px
+
+		&::placeholder
+			line-height: 45px
+
+	.hero
+		padding: 30px 0
+
+		&__bg
+			display: none
+
+		h1, p
+			max-width: 100%
+
+
+	.project
+		padding: 30px 0
+
+	.shop
+
+		&__category,
+		&__list
+			width: 100%
+
+		&__container .columns-3
+			width: 100%
+		
+		&__category
+			ul
+				display: none
+
+	.soc
+		padding: 1px
+		transform: translate(-46%,-50%) rotate(-90deg)
+
+	.woocommerce
+
+		td
+			display: block
+			text-align: center
+			padding: 5px 90px
+
+		tr
+			position: relative
+			display: block
+			margin-bottom: 15px
+
+		&__product-thumbnail
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+
+		&__product-remove
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			right: 0
+			padding: 5px !important
+
+		&__product-quantity a
+			height: 45px
+
+		&__product-subtotal
+			border-top-right-radius: 0
+			border-bottom-left-radius: 20px
+			border-bottom-right-radius: 20px
+
+		&__product-name
+			border-bottom-left-radius: 0 !important
+			border-top-left-radius: 20px
+			border-top-right-radius: 20px
+
+		&__cart-item
+			.woocommerce
+				&__product-thumbnail
+					position: relative
+					top: 0
+					transform: translate(0, 0)
+
+				&__product-remove
+					position: relative
+					top: 0
+					transform: translate(0, 0)
+					right: 0
+					padding: 0 !important	
+			
+	.order .form-row
+		margin-bottom: 15px
+
+
+@media only screen and (max-width : 480px)
+	h1
+		font-size: 28px
+
+	.btn
+		max-width: 100%
+		font-size: 16px
+		height: 40px
+
+	.button
+		font-size: 16px
+		height: 40px
+		max-width: 100%
+
+	.modal
+		padding: 20px
+
+		&__close
+			top: 5px
+			right: 5px
+
+		ul
+			margin-bottom: 25px
+
+	.header
+		min-height: 72px
+
+		&__search
+			position: relative
+
+			&:focus, 
+			&:hover
+
+			form
+				right: auto
+				left: 50%
+				top: 90%
+				transform: translate(-50%, 0)
+
+		&__nav
+			padding: 15px
+
+			li
+				ul
+					max-width: 320px
+	
+	.footer
+		a, p
+			width: 100%
+
+		&__container
+			padding: 15px
+
+	.about
+		padding: 15px 0
+
+		&__col
+			padding: 15px
+
+	.hero__sub-title
+		font-size: 18px
+
+	
+	.cart
+		width: 100%
+		max-width: 320px
+		margin: 0 auto 30px
+
+		&:hover,
+		&:focus
+			.cart__img
+				img
+					margin-top: 0px
+					margin-bottom: 0px
+
+			.tinv-wraper
+				margin-top: 0px
+
+			.added_to_cart
+				top: 0px
+
+		&__price,
+		&__img
+			margin-bottom: 5px
+
+	
+	.info
+		padding: 30px 0
+
+		&__wrap
+			padding: 15px
+
+	.contacts
+		h3
+			text-align: center
+
+		&__info,
+		&__form
+			max-width: 100%
+
+		&__info
+			margin-bottom: 20px
+
+			a
+				margin-bottom: 15px
+
+			img
+				margin-bottom: 10px
+
+		&__form
+			padding: 15px
+
+			&_btn
+				position: relative
+				bottom: 0
+				right: auto
+				margin: 0 auto
+	
+	.cabinet
+		h4
+			font-size: 18px
+			
+		&__nav
+			width: 100%
+			margin-bottom: 20px
+
+			a
+				text-align: center
+				padding: 5px
+
+		&__content
+			width: 100%
+
+	.woocommerce
+		.cart-subtotal, 
+		.order-total
+			width: 100%
+
+		&__checkout_col
+			padding: 10px
+
+		&-orders-table
+			width: 100%
+
+	.wc_payment_method
+		label
+			padding: 0 !important
+
+
+
