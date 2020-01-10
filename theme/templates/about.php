@@ -10,11 +10,11 @@ get_header();
 		<div class="about__container container">
 
 			<div class="about__col">
-				<?php the_field('left'); ?>
+				<?php the_field ( 'about_left' , pll_current_language ( 'slug' ) ) ; ?>
 			</div>
 
 			<div class="about__col">
-				<?php the_field('right'); ?>
+				<?php the_field ( 'about_right' , pll_current_language ( 'slug' ) ) ; ?>
 			</div>
 
 		</div>

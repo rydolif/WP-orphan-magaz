@@ -1,5 +1,14 @@
 $(function() {
 
+//-------------------------news-archive---------------------------------------
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  });
 
 //-------------------------скорость якоря---------------------------------------
   $(".hero li").on("click","a", function (event) {
@@ -54,7 +63,7 @@ $(function() {
   }
 
 //-------------------------------активна ссилка на якій знаходишся для меню---------------------------------------
-  $('.cabinet__nav li a').each(function () {
+  $('.cabinet__nav ul li a').each(function () {
       var location = window.location.href;
       var link = this.href; 
       if(location == link) {
@@ -64,3 +73,8 @@ $(function() {
 
 });
 
+//----------------------------------------js----------------------------------
+
+$(window).on('load', function(){
+  $('.preloader').delay(1000).fadeOut('slow');
+});

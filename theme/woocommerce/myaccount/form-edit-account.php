@@ -24,7 +24,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 
 	<div class="cabinet__block">
-		<h4>Мої дані</h4>
+		<h4><?php the_field ( 'cabinet_info' , pll_current_language ( 'slug' ) ) ; ?></h4>
 
 		<p class="cabinet__line form__input woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 			<input placeholder="<?php esc_html_e( 'First name', 'woocommerce' ); ?>"  type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr( $user->first_name ); ?>" />
@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	</div>
 
 	<fieldset class="cabinet__block">
-		<h4>Заміна пароля</h4>
+		<h4><?php the_field ( 'cabinet_pass' , pll_current_language ( 'slug' ) ) ; ?></h4>
 
 		<p class="cabinet__line form__input woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 			<input placeholder="<?php esc_html_e( 'Current password (leave blank to leave unchanged)', 'woocommerce' ); ?>" type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off" />
@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 
 	<p class="center cabinet__btn">
 		<?php wp_nonce_field( 'save_account_details', 'save-account-details-nonce' ); ?>
-		<button type="submit" class="btn btn--cart woocommerce-Button button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>"><?php esc_html_e( 'Зберегти', 'woocommerce' ); ?></button>
+		<button type="submit" class="btn woocommerce-Button button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>"><?php esc_attr_e( 'Save changes', 'woocommerce' ); ?></button>
 		<input type="hidden" name="action" value="save_account_details" />
 	</p>
 

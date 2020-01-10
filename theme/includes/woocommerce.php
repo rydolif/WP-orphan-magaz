@@ -168,8 +168,7 @@ if (!function_exists('schoolstudy_woocommerce_wrapper_before')) {
 	function schoolstudy_woocommerce_wrapper_before()
 	{
 ?>
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main">
 			<?php
 		}
 	}
@@ -187,7 +186,6 @@ if (!function_exists('schoolstudy_woocommerce_wrapper_before')) {
 		{
 			?>
 			</main><!-- #main -->
-		</div><!-- #primary -->
 	<?php
 		}
 	}

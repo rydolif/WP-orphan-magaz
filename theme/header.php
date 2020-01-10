@@ -15,6 +15,18 @@
 
 <body>
 
+	<div class="preloader">
+		<div class="item-1"><div></div></div>
+		<div class="item-2"><div></div></div>
+		<div class="item-3"><div></div></div>
+		<div class="item-4"><div></div></div>
+		<div class="item-5"><div></div></div>
+		<div class="item-6"><div></div></div>
+		<div class="item-7"><div></div></div>
+		<div class="item-8"><div></div></div>
+		<div class="item-9"><div></div></div>
+	</div>
+
 	<div class="soc">
 		<a href="<?php the_field('Instagram', 'option'); ?>" target="_blank">Instagram</a>
 		<a href="<?php the_field('Facebook', 'option'); ?>" target="_blank">Facebook</a>
@@ -65,13 +77,13 @@
 					?>
 				</div>
 				<div class="header__lang">
-					<a href="#">ukr</a>
-					<ul>
-						<li><a href="#">ru</a></li>
-						<li><a href="#">En</a></li>
-					</ul>
+					<?php
+						wp_nav_menu(array(
+							'menu' => 'lang',
+							'theme_location' => 'lang',
+						));
+					?>
 				</div>
-				
 			</div>
 
 		</div>

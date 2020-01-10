@@ -29,6 +29,29 @@
 
 	.info__wrap
 		padding: 60px
+
+	.single
+		h1
+			margin-bottom: 30px
+
+		&__content
+			margin-bottom: 30px
+
+		.flex-viewport
+			max-width: 480px
+
+		.flex-control-nav
+			margin-right: 15px
+
+			li
+				margin-bottom: 15px
+
+			img
+				width: 60px
+
+		&__description
+			.summary
+				width: 49%
 	
 
 @media only screen and (max-width : 1200px)
@@ -168,6 +191,12 @@
 	body
 		font-size: 14px
 
+	.soc
+		position: absolute
+		top: 200px
+		padding: 1px
+		transform: translate(-46%,-50%) rotate(-90deg)
+
 	.container
 		max-width: 767px
 
@@ -202,11 +231,6 @@
 		&__login
 			font-size: 18px
 
-		&__search
-			&:focus, 
-			&:hover
-				form
-					right: 27px
 
 	.hero
 		h1,
@@ -242,6 +266,45 @@
 
 	.info p
 		max-width: 500px
+
+	.article
+		padding: 20px 0
+
+		.wp-block-group__inner-container
+			background-color: #f2f5f8
+			padding: 20px
+			border-radius: 20px
+			margin-bottom: 15px
+			line-height: 1.6
+
+		img
+			margin-bottom: 15px
+	
+	.news
+		&__slide
+			img
+				transform: translate(-50%, -50%)
+
+	.page-numbers
+
+		li
+			margin: 0 5px
+
+		a, span
+			width: 30px
+			height: 30px
+
+	.single
+		h1
+			margin-bottom: 15px
+			font-size: 24px
+
+		&__content
+			margin-bottom: 15px
+
+
+	.related .cart
+		width: 50%
 
 
 @media only screen and (max-width : 767px)
@@ -481,6 +544,16 @@
 			&:last-child
 				margin-bottom: 0
 
+	.single__description
+		.woocommerce-product-gallery
+			margin-bottom: 30px
+			width: 100%
+			order: 1
+
+		.summary
+			width: 100%
+			margin-bottom: 30px
+
 
 @media only screen and (max-width : 576px)
 	.container
@@ -525,10 +598,6 @@
 		&__category
 			ul
 				display: none
-
-	.soc
-		padding: 1px
-		transform: translate(-46%,-50%) rotate(-90deg)
 
 	.woocommerce
 
@@ -586,6 +655,10 @@
 		margin-bottom: 15px
 
 
+	.related .cart
+		width: 100%
+
+
 @media only screen and (max-width : 480px)
 	h1
 		font-size: 28px
@@ -618,8 +691,10 @@
 
 			&:focus, 
 			&:hover
+				form
+					right: 0
 
-			form
+			.aws-container
 				right: auto
 				left: 50%
 				top: 90%
@@ -720,7 +795,8 @@
 			width: 100%
 
 	.woocommerce
-		.cart-subtotal, 
+		.cart-subtotal,
+		.cart-discount,
 		.order-total
 			width: 100%
 
@@ -733,6 +809,110 @@
 	.wc_payment_method
 		label
 			padding: 0 !important
+	
+	.news
+		h2
+			position: relative
+			margin-bottom: 15px
+			
+		&__content
+			padding: 15px
+			max-width: 100%
+			order: 1
+
+		&__slide
+			padding: 0
+
+			img
+				position: relative
+				top: auto
+				left: auto
+				transform: translate(0, 0)
+				margin-bottom: 10px
+
+		time
+			display: block
+			margin-right: 0
+			margin-left: auto
+			margin-bottom: 5px
+
+		.swiper-container
+			padding-bottom: 40px
+
+		.swiper-pagination
+			width: 100%
+			height: 20px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			left: 0
+			right: auto
+
+		.swiper-pagination-bullet
+			position: relative
+			border: 1px solid transparent
+			transition: all .3s
+			opacity: 1
+			width: 12px
+			height: 12px
+			margin: 0 10px !important
+			background-color: #fff
+
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 5px
+				height: 5px
+				border-radius: 50%
+				background-color: #000
+				transition: all .3s
+				z-index: 1
+
+			&-active
+				border: 1px solid #000
+
+				&::before
+					opacity: 0
+	
+	.tinv-wishlist .tinv-modal .tinv-modal-inner
+		padding: 20px
+
+
+	.single
+		padding-top: 0
+
+		.button
+			max-width: fit-content
+
+		.wbu-quantity
+			height: 40px
+
+			a, input
+				height: 40px
+				line-height: 40px
+
+		.variations_form .variations
+			flex-wrap: wrap
+
+		.woo-variation-items-wrapper
+			width: 100%
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+		.flex-control-nav img
+			width: 40px
+
+		.variations_form
+			margin-bottom: 0
+
+
+
 
 
 

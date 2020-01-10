@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
 
 		<div class="woocommerce__order-total order-total">
-			<p><?php esc_html_e( 'Сума замовлення:', 'woocommerce' ); ?></p>
+			<p><?php esc_html_e( 'Total:', 'woocommerce' ); ?></p>
 			<div data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></div>
 		</div>
 

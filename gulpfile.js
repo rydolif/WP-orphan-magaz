@@ -38,7 +38,8 @@ gulp.task('js', function() {
 	return gulp.src([
 		'theme/assets/libs/jquery/dist/jquery.min.js',  			//----jquery
 		'theme/assets/libs/jquery.mask.min.js', 					//----форма
-		'theme/assets/libs/jquery.popupoverlay.js', 			//----слайдер			
+		'theme/assets/libs/jquery.popupoverlay.js', 			//----слайдер
+		'theme/assets/libs/swiper/swiper.min.js', 			//----слайдер
 		'theme/assets/js/common.js', // Always at the end
 	])
 	.pipe(plumber())

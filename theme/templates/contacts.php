@@ -10,7 +10,9 @@
 		<div class="contacts__container container">
 
 			<div class="contacts__info">
-				<h3>Залишайся на зв’язку</h3>
+				<h3>
+					<?php the_field ( 'contacts_title' , pll_current_language ( 'slug' ) ) ; ?>
+				</h3>
 				<div class="contacts__info_list">
 					<a href="tel:<?php the_field('tel_url', 'option'); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__tel.png" alt="">
@@ -28,7 +30,10 @@
 			</div>
 
 			<div class="contacts__form">
-				<?php echo do_shortcode( '[contact-form-7 id="5" title="Контактная контакты"]' ); ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 
 		</div>

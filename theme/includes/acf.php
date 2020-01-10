@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-//------------------настройка- ACF---------------------
+// ------------------настройка- ACF---------------------
     if( function_exists('acf_add_options_page') ) {
 
         acf_add_options_page(array(
@@ -17,3 +17,22 @@ if ( ! defined( 'ABSPATH' ) ) {
         ));
 
     }
+
+
+// ------------------настройка- ACF-мови--------------------
+    if( function_exists('acf_add_options_page') ) {
+      // Language Specific Options
+      // Translatable options specific languages. e.g., social profiles links
+      // 
+      
+      $languages = array( 'en', 'uk' );
+      foreach ( $languages as $lang ) {
+        acf_add_options_page( array(
+          'page_title' => 'Настройка (' . strtoupper( $lang ) . ')',
+          'menu_title' => __('Настройка (' . strtoupper( $lang ) . ')', 'text-domain'),
+          'menu_slug'  => "site-options-${lang}",
+          'post_id'    => $lang
+        ) );
+      }
+    }
+

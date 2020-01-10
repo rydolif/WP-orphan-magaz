@@ -10,15 +10,15 @@
 	<section class="hero">
 		<div class="hero__container container">
 
-			<h1>Творча майстерня</h1>
-			<p class="hero__sub-title">все зроблено дітьми  - сиротами</p>
+			<h1>
+				<?php the_field ( 'index_title' , pll_current_language ( 'slug' ) ) ; ?>
+			</h1>
+			<p class="hero__sub-title">
+				<?php the_field ( 'index_sub-title' , pll_current_language ( 'slug' ) ) ; ?>
+			</p>
 
 			<div class="hero__info">
-				<p><b><i>Привіт! </i></b></p>
-				<p>
-					Якщо ти тут, отже ти небайдужий до хендмейд речей та дітей-сиріт. 
-					<br> <b>Ти не пожалкуєш, що зайшов сюди,</b> адже ми створили перший в Україні соціальний воркшоп, який містить різні товари та одяг, зроблені руками дітей-сиріт. 
-				</p>
+				<?php the_field ( 'index_first-text' , pll_current_language ( 'slug' ) ) ; ?>
 			</div>
 
 			<div class="hero__bg">
@@ -31,27 +31,12 @@
 		<div class="project__container container">
 
 			<div class="project__col">
-				<h2>Навіщо та про що цей проект?</h2>
-				<p>
-					Даний проект – це колаборація дітей-сиріт з українськими дизайнерами та майстрами України. 
-				</p>
-				<p>
-					У рамках майстер класів, вони навчають їх різним поробкам, які ти зможеш знайти на цій платформі.
-				</p>
+				<?php the_field ( 'index_project-description' , pll_current_language ( 'slug' ) ) ; ?>
 				<div class="project__question">?</div>
 			</div>
 			
 			<div class="project__col">
-				<h2>В чому фішка?</h2>
-				<p>
-					Усі речі є унікальними. Ти 100 % захочеш їх носити, тому що вони круті, стильні та незвичайні, адже їх розробляли відомі дизайнери та майстри. 
-				</p>
-				<p>
-					Ці речі стануть як незамінним атрибутом твого повсякденного життя, так і чудовим подарунком на свята, корпоративи та дні народження.
-				</p>
-				<p>
-					Асортимент товарів буде постійно обновлюватись, адже нові малюнки  та поробки від сиріт надходять до нас фактично кожного дня.  Тому, будь-ласка, слідкуй за нашими обновленнями у соц. мережах та цьому сайті <i><b>аби встигнути першим придбати  круту незамінну річ! </b></i>
-				</p>
+				<?php the_field ( 'index_project-description-2' , pll_current_language ( 'slug' ) ) ; ?>
 			</div>
 			
 		</div>
@@ -61,7 +46,7 @@
 		<div class="shop__container container">
 
 			<div class="shop__category">
-				<h2>Новинки</h2>
+				<h2><?php the_field ( 'index_shop-title' , pll_current_language ( 'slug' ) ) ; ?></h2>
 				<?php
 					wp_nav_menu(array(
 						'menu' => 'category',
@@ -77,27 +62,14 @@
 	<section class="info">
 		<div class="container">
 			
-			<h2>Як долучитись?</h2>
+			<h2>
+				<?php the_field ( 'index_info-title' , pll_current_language ( 'slug' ) ) ; ?>
+			</h2>
 
 			<div class="info__wrap click">
-				<p>
-					Ти просто обирай товари, які тобі до вподоби та купуй.
-				</p>
-				<p>
-					Усі кошти будуть йти виключно на дітей-сиріт (за це можеш не переживати, адже ми можемо надати тобі будь-який звіт, який тільки забажаєш).
-				</p>
-				<p>
-					Як бачиш, допомагати супер легко! Ти купуєш круту унікальну стильну річ й водночас допомагаєш сироті здобути гідне майбутнє. Круто, правда?
-				</p>
-				<p>
-					Тож, чого ти чекаєш?
-				</p>
-				<p>
-					Повертайся скоріш до <a href="#shop">категорій товарів</a> та купуй усе що тобі до вподоби!
-				</p>
-				<p>
-					Й пам’ятай, <b><i>тільки разом ми допоможемо дітям-сиротам змінити їх майбутнє на краще!</i></b>
-				</p>
+
+				<?php the_field ( 'index_info-text' , pll_current_language ( 'slug' ) ) ; ?>
+
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/info__bg.png" alt="" class="info__bg">
 			</div>
 
