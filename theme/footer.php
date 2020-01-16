@@ -4,16 +4,46 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__container">
-			
-				<p>
-					<?php the_field ( 'copy' , pll_current_language ( 'slug' ) ) ; ?>
-				</p>
 
-				<a href="<?php the_field ( 'policy_link' , pll_current_language ( 'slug' ) ) ; ?>" target="_blank">
-					<?php the_field ( 'policy_text' , pll_current_language ( 'slug' ) ) ; ?>
-				</a>
+				<div class="footer__col">
+					<a href="<?php echo get_home_url(); ?>" class="footer__logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__logo.png" alt="">
+					</a>
+					<p>© 2019</p>
+				</div>
 
-				<a href="http://flex-design.net/" target="_blank">Created by <b>flexdesign</b></a>
+				<div class="footer__col">
+					<h3><?php the_field ( 'footer_menu' , pll_current_language ( 'slug' ) ) ; ?></h3>
+					<?php
+						wp_nav_menu(array(
+							'menu' => 'footer',
+						));
+					?>
+				</div>
+
+				<div class="footer__col">
+					<h3><?php the_field ( 'catalog_title' , pll_current_language ( 'slug' ) ) ; ?></h3>
+					<?php
+						wp_nav_menu(array(
+							'menu' => 'category',
+						));
+					?>
+				</div>
+
+				<div class="footer__col">
+					<div>
+						<h3><?php the_field ( 'footer_soc' , pll_current_language ( 'slug' ) ) ; ?></h3>
+						<div class="footer__soc">
+							<a href="<?php the_field('Instagram', 'option'); ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__in.png" alt="">
+							</a>
+							<a href="<?php the_field('Facebook', 'option'); ?>" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__fb.png" alt="">
+							</a>
+						</div>
+					</div>
+					<a href="http://flex-design.net/" target="_blank">Created by <b>flexdesign</b></a>
+				</div>
 				
 			</div>
 		</div>

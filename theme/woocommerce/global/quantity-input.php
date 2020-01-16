@@ -27,7 +27,8 @@ if ( $max_value && $min_value === $max_value ) {
 	/* translators: %s: Quantity. */
 	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : __( 'Quantity', 'woocommerce' );
 	?>
-	<div class="quantity">
+	<div class="wbu-quantity quantity">
+		<a href="" class="wbu-qty-button wbu-btn-sub" data-cart-key="<?php echo $cart_item_key; ?>">-</a>
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"
@@ -40,6 +41,7 @@ if ( $max_value && $min_value === $max_value ) {
 			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ); ?>"
 			size="4"
 			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
+		<a href="" class="wbu-qty-button wbu-btn-inc" data-cart-key="<?php echo $cart_item_key; ?>">+</a>
 	</div>
 	<?php
 }

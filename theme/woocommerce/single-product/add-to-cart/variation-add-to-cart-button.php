@@ -23,8 +23,7 @@ global $product;
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 
-	<div class="wbu-quantity">
-		<a href="" class="wbu-qty-button wbu-btn-sub" data-cart-key="<?php echo $cart_item_key; ?>">-</a>
+	<div class="">
 			<?php
 				do_action( 'woocommerce_before_add_to_cart_quantity' );
 
@@ -36,7 +35,6 @@ global $product;
 
 				do_action( 'woocommerce_after_add_to_cart_quantity' );
 			?>
-		<a href="" class="wbu-qty-button wbu-btn-inc" data-cart-key="<?php echo $cart_item_key; ?>">+</a>
 	</div>
 
 </div>

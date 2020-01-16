@@ -380,24 +380,65 @@
 	color: #fff
 	padding: 30px 0
 
-	a
-		@extend .link
+	h3
 		color: #fff
+		text-transform: uppercase
+		margin-bottom: 30px
+		font-weight: 400
+		font-size: 20px
+
+	a
+		color: #fff
+		font-family: $sub-title
 
 		&:hover,
 		&:focus
 			color: #fff
+	ul
+		a
+			@extend .link
+			&::before
+				background-color: #fff
 
-		&::before
-			background-color: #fff
+	li
+		margin-bottom: 10px
+
+		&:last-child
+			margin-bottom: 0
 
 	&__container
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
-		background-color: #363636
+		background-color: #334c52
 		padding: 55px 45px
 		border-radius: 20px
+
+	&__col
+		width: 24%
+
+		&:first-child
+			text-align: center
+			width: 20%
+
+		&:last-child
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+			a
+				letter-spacing: 1px
+
+	&__logo
+		display: block
+		margin-bottom: 20px
+
+	&__soc
+		display: flex
+
+		a
+			display: block
+			margin-right: 20px
 
 
 .about
@@ -588,7 +629,7 @@
 		width: 100%
 		margin-bottom: 15px
 		transition: all .6s
-		cursor: url('../img/cursor.png'), pointer
+		// cursor: url('../img/cursor.png'), pointer
 		
 		img
 			width: 100%
@@ -728,6 +769,7 @@
 		img
 			display: block
 			margin: 0 auto 25px
+			width: 20px
 
 	&__form
 		max-width: 820px
@@ -1837,6 +1879,23 @@ div.wpcf7-mail-sent-ok
 
 .breadcrumbs
 	display: none
-	
+
+
+.single__text
+	.cart
+		width: 100% !important
+		max-width: 100% !important
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		&:hover,
+		&:focus
+			.added_to_cart
+				top: -10px
+
+		.added_to_cart
+			top: -10px
+
 
 @import "media" // Always at the end

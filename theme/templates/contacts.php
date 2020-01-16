@@ -15,15 +15,15 @@
 				</h3>
 				<div class="contacts__info_list">
 					<a href="tel:<?php the_field('tel_url', 'option'); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__tel.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__tel.svg" alt="">
 						<span><?php the_field('tel', 'option'); ?></span>
 					</a>
 					<a href="mailto:<?php the_field('mail', 'option'); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__mail.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__mail.svg" alt="">
 						<span><?php the_field('mail', 'option'); ?></span>
 					</a>
 					<a href="<?php the_field('site', 'option'); ?>" target="_blank">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__site.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts__site.svg" alt="">
 						<span><?php the_field('site', 'option'); ?></span>
 					</a>
 				</div>
