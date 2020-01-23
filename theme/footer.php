@@ -7,7 +7,7 @@
 
 				<div class="footer__col">
 					<a href="<?php echo get_home_url(); ?>" class="footer__logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__logo.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__logo.svg" alt="">
 					</a>
 					<p>© 2019</p>
 				</div>
@@ -35,10 +35,10 @@
 						<h3><?php the_field ( 'footer_soc' , pll_current_language ( 'slug' ) ) ; ?></h3>
 						<div class="footer__soc">
 							<a href="<?php the_field('Instagram', 'option'); ?>" target="_blank">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__in.png" alt="">
+								<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256,152A105,105,0,1,0,361,257,105.12,105.12,0,0,0,256,152Zm0,0A105,105,0,1,0,361,257,105.12,105.12,0,0,0,256,152ZM437,0H75A75,75,0,0,0,0,75V437a75,75,0,0,0,75,75H437a75,75,0,0,0,75-75V75A75,75,0,0,0,437,0ZM256,392c-74.4,0-135-60.6-135-135s60.6-135,135-135,135,60.6,135,135S330.4,392,256,392ZM421,122a30,30,0,1,1,30-30A30.09,30.09,0,0,1,421,122ZM256,152A105,105,0,1,0,361,257,105.12,105.12,0,0,0,256,152Zm0,0A105,105,0,1,0,361,257,105.12,105.12,0,0,0,256,152Zm0,0A105,105,0,1,0,361,257,105.12,105.12,0,0,0,256,152Z"/></svg>
 							</a>
 							<a href="<?php the_field('Facebook', 'option'); ?>" target="_blank">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer__fb.png" alt="">
+								<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.97 96.12"><path d="M72.09,0,59.62,0c-14,0-23.05,9.28-23.05,23.66V34.56H24a2,2,0,0,0-2,2v15.8a2,2,0,0,0,2,2H36.57V94.16a2,2,0,0,0,2,2H54.88a2,2,0,0,0,2-2V54.29H71.5a2,2,0,0,0,2-2V36.52a2,2,0,0,0-2-2H56.84V25.32c0-4.44,1.06-6.7,6.85-6.7h8.4a2,2,0,0,0,2-2V2A2,2,0,0,0,72.09,0Z" transform="translate(-22.08)"/></svg>
 							</a>
 						</div>
 					</div>

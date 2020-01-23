@@ -50,25 +50,25 @@
 			?>
 
 			<a href="<?php echo get_home_url(); ?>" class="header__logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__logo.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="">
 			</a>
 
 			<div class="header__info">
 
 				<div class="header__info_wrap header__search">
 					<?php echo do_shortcode( '[aws_search_form]' ); ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__search.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__search.svg" alt="">
 				</div>
 
 				<?php cart_link(); ?><?php the_widget('WC_Widget_Cart', 'title='); ?>
 
 				<div class="header__info_wrap header__hard">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__hard.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__hard.svg" alt="">
 					<?php echo do_shortcode('[ti_wishlist_products_counter]'); ?>
 				</div>
 
 				<div class="header__info_wrap header__login">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__login.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__login.svg" alt="">
 					<?php
 						wp_nav_menu(array(
 							'menu' => 'login',

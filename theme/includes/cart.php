@@ -6,7 +6,7 @@
 	 function cart_link() {
 	 ?>
 	<a class="header__info_wrap header__cart cart-contents" href="<?php echo get_home_url(); ?>/cart/">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__cart.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__cart.svg" alt="">
 		<span><?php echo sprintf (_n( '%d', '%d ', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?></span>
 		</a> 
 	 <?php
@@ -20,7 +20,7 @@
 	 ob_start();
 	 ?>
 	 <a class="header__info_wrap header__cart cart-contents" href="<?php echo get_home_url(); ?>/cart/">
-	 	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__cart.png" alt="">
+	 	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__cart.svg" alt="">
 	 	<span class="active"><?php echo sprintf (_n( '%d', '%d', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?></span></a> 
 	 <?php
 	 $fragments['a.cart-contents'] = ob_get_clean();

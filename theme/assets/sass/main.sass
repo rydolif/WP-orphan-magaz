@@ -40,9 +40,6 @@
 	transform: translate(-40%, -50%) rotate(-90deg)
 	z-index: 1000
 	padding: 15px
-	background-color: #fff
-	border-bottom-right-radius: 20px
-	border-bottom-left-radius: 20px
 	display: flex
 
 	a
@@ -81,7 +78,11 @@
 	&__nav
 		display: flex
 		position: relative
-		
+
+		a
+			&:hover,
+			&:focus
+				color: $green
 
 		li
 			padding-bottom: -40px
@@ -172,11 +173,14 @@
 
 	&__logo
 		img
-			width: 100%
+			width: 75px
 
 	&__info
 		display: flex
 		align-items: center
+
+		img
+			width: 20px
 
 		&_wrap
 			position: relative
@@ -431,7 +435,8 @@
 
 	&__logo
 		display: block
-		margin-bottom: 20px
+		margin: 0 auto 20px
+		width: 80px
 
 	&__soc
 		display: flex
@@ -439,6 +444,17 @@
 		a
 			display: block
 			margin-right: 20px
+
+			&:hover,
+			&:focus
+				svg
+					transform: scale(.9)
+
+		svg
+			fill: #fff
+			width: 20px
+			max-height: 20px
+			transition: all .6s
 
 
 .about
@@ -459,7 +475,7 @@
 		margin-bottom: 30px
 
 	p
-		text-indent: 20px
+		// text-indent: 20px
 		line-height: 1.8
 
 
@@ -510,7 +526,7 @@
 
 	p
 		line-height: 2
-		text-indent: 12px
+		// text-indent: 12px
 		font-size: 20px
 
 
@@ -708,7 +724,7 @@
 		font-family: $sub-title
 
 	p
-		text-indent: 15px
+		// text-indent: 15px
 		max-width: 600px
 		line-height: 1.6
 
@@ -902,6 +918,10 @@ div.wpcf7-mail-sent-ok
 			padding: 15px 25px
 			font-weight: 700
 			border-radius: 20px
+
+			&:hover,
+			&:focus
+				color: $accent
 
 		li
 			margin-bottom: 10px
@@ -1897,5 +1917,115 @@ div.wpcf7-mail-sent-ok
 		.added_to_cart
 			top: -10px
 
+
+.return-to-shop
+
+	a
+		display: none
+	
+
+.woocommerce-shipping-methods,
+.wc_payment_methods
+
+	label
+		position: relative
+		padding-left: 50px
+		color: $accent
+		cursor: pointer
+		margin-bottom: 0
+		margin-right: 0
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+
+		&::before
+			width: 15px
+			height: 15px
+			border-radius: 3px
+			border: 1px solid $accent
+
+		&::after
+			width: 9px
+			height: 9px
+			border-radius: 3px
+			border: 1px solid $accent
+			background: $accent
+			left: 3px
+			top: 3px
+			transition: all .6s
+
+	input[type="radio"]
+		display: none
+
+	input[type="radio"]:checked + label::after
+		transform: scale(1)
+
+	input[type="radio"] + label::after
+		transform: scale(0)
+
+.wc_payment_methods
+	font-size: 12px
+
+
+.wc-ukr-shipping-checkbox
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	border: none
+	outline: none
+	text-align: center
+	border: none
+	transition: all .6s
+	width: 100%
+	max-width: 245px
+	height: 55px
+	background-color: $green
+	letter-spacing: .4px
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 24px
+	border-radius: 20px
+	color: #fff
+
+	&:hover,
+	&:focus
+		outline: none
+		text-decoration: none
+		cursor: pointer
+		background-color: $green
+		color: #fff
+		box-shadow: 0 0 10px 0 rgba($green, 1)
+
+	input
+		display: none
+
+
+.woocommerce-input-wrapper
+	.select2.select2-container .select2-selection
+		border-radius: 20px !important
+		border: 1px solid #fff !important
+		outline: none !important
+
+	.select2-container.select2-container--open .select2-dropdown
+		border-radius: 20px !important
+
+.wc_payment_method
+	text-align: left
+
+
+.wc_payment_methods
+	li
+		p
+			display: none
+			
+
+// .payment_method_bacs,
+// .payment_method_cod
+// 	display: none
+	
 
 @import "media" // Always at the end

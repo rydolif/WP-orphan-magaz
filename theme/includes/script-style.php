@@ -15,7 +15,7 @@
 //------------------подключение шрифтов------------------
    function wph_add_google_fonts() {
        if ( !is_admin() ) {
-           wp_register_style('Philosopher', 'https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic', array(), null, 'all');
+           wp_register_style('Philosopher', 'https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic&display=swap', array(), null, 'all');
            wp_enqueue_style('Philosopher');
        }
    }

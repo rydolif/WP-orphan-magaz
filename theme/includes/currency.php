@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	add_filter( 'woocommerce_currencies', 'misha_add_valyuta' );
 	 
 	function misha_add_valyuta( $currencies ) {
-		$currencies['LA2'] = 'Грн';
+		$currencies['LA2'] = 'UAH';
 		return $currencies;
 	}
 	 
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		// я добавил его через условие if
 		// если нужно добавить несколько символов сразу, то оптимальнее конечно switch()
 		if( $valyuta_code == 'LA2' ) {
-			$valyuta_symbol = 'грн'; // тут можно кстати сразу return 'a';
+			$valyuta_symbol = 'UAH'; // тут можно кстати сразу return 'a';
 		}
 		return $valyuta_symbol; 
 	}
