@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         $args = array(
             'label'                 => __( 'Новини', 'text_domain' ),
             'labels'                => $labels,
-            'supports'              => array( 'title', 'editor', 'thumbnail','excerpt' ),// 'title','editor','author','thumbnail',,'trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),// 'title','editor','author','thumbnail',,'trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
             'hierarchical'          => false,
             'public'                => true,
             'show_ui'               => true,

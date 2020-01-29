@@ -1425,86 +1425,59 @@ div.wpcf7-mail-sent-ok
 		position: relative
 
 	h2
-		position: absolute
-		left: 15px
-		top: 0
 		text-transform: uppercase
 		font-size: 24px
-		z-index: 11
+		margin-bottom: 20px
 
-	&__content
-		max-width: 410px
-		width: 100%
-		background-color: $bg
-		border-radius: 20px
-		padding: 40px 20px 20px 40px
+	&__list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
 
-		div
-			display: flex
-			justify-content: space-between
-			align-items: center
-			flex-wrap: wrap
-
-	&__slide
-		padding: 100px 0
-		opacity: 0 !important
-		padding-right: 50px
+	&__item
+		width: 32%
+		margin-bottom: 15px
 
 		img
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-43%, -50%)
-			border-radius: 20px
-			z-index: -1
-			max-height: 100%
+			width: 100%
 			height: auto
-			max-width: 100%
 
 	&__excerpt
 		margin-bottom: 10px
 
-	.swiper-slide-active
-		opacity: 1 !important
+	&__content
+		padding: 15px
+		background-color: #f2f5f8
+		border-radius: 15px
 
-	.swiper-pagination
-		width: 20px
-		height: 100%
+	time
+		margin-bottom: 10px
+		display: block
+		
+
+.pagination
+	display: flex
+	justify-content: center
+
+	a, span
 		display: flex
-		flex-direction: column
+		align-items: center
 		justify-content: center
-		left: auto
-		right: 25px
+		border: 1px solid $accent
+		border-radius: 50%
+		width: 30px
+		height: 30px
+		margin-right: 10px
 
-	.swiper-pagination-bullet
-		position: relative
-		border: 1px solid transparent
-		transition: all .3s
-		opacity: 1
-		width: 12px
-		height: 12px
-		margin: 10px 0 !important
-		background-color: #fff
+	a
+		color: $accent
+		cursor: pointer
+		
 
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			width: 5px
-			height: 5px
-			border-radius: 50%
-			background-color: #000
-			transition: all .3s
-			z-index: 1
+	span
+		background-color: $accent
+		color: #fff
 
-		&-active
-			border: 1px solid #000
-
-			&::before
-				opacity: 0
 
 
 
