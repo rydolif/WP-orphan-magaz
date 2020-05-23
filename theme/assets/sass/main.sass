@@ -645,12 +645,12 @@
 		width: 100%
 		margin-bottom: 15px
 		transition: all .6s
-		// cursor: url('../img/cursor.png'), pointer
-		
+
 		img
 			width: 100%
 			border-radius: 15px
 			transition: all .6s
+			height: 390px
 
 	&__price
 		font-size: 24px
@@ -1996,9 +1996,22 @@ div.wpcf7-mail-sent-ok
 			display: none
 			
 
-// .payment_method_bacs,
-// .payment_method_cod
-// 	display: none
+.partners
+	text-align: center
+	padding: 70px 0 40px
+
+	&__list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		align-items: center
 	
+	&__item
+		width: 18%
+		margin-bottom: 15px
+
+		img
+			width: 100%
+			max-height: 100px
 
 @import "media" // Always at the end

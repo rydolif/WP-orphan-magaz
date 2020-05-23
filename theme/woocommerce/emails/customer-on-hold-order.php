@@ -25,8 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><?php printf( __( 'Hi %s,', 'woocommerce' ), $order->get_billing_first_name() ); ?></p><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
-<p><?php _e( 'Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:', 'woocommerce' ); ?></p><?php // phpcs:ignore WordPress.XSS.EscapeOutput ?>
+<p><?php printf( __( 'Доброго дня, %s,', 'woocommerce' ), $order->get_billing_first_name() ); ?></p>
+<?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+Ваше замовлення наразі опрацьовується.
+<p><?php _e( '', 'woocommerce' ); ?></p><?php // phpcs:ignore WordPress.XSS.EscapeOutput ?>
 
 <?php
 
@@ -42,7 +44,9 @@ do_action( 'woocommerce_email_order_details', $order, $sent_to_admin, $plain_tex
  * @hooked WC_Emails::order_meta() Shows order meta data.
  */
 do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, $email );
+?>
 
+<?php
 /*
  * @hooked WC_Emails::customer_details() Shows customer details
  * @hooked WC_Emails::email_address() Shows email address
@@ -50,9 +54,11 @@ do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, 
 do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
 ?>
+<b>
 <p>
-<?php _e( 'We look forward to fulfilling your order soon.', 'woocommerce' ); // phpcs:ignore WordPress.XSS.EscapeOutput ?>
+<?php _e( 'Якщо у Вас є питання, Ви можете написати нам на пошту - office@orphan-club.com або зателефонувати за номером телефону +3 8 067 820 75 50', 'woocommerce' ); // phpcs:ignore WordPress.XSS.EscapeOutput ?>
 </p>
+</b>
 <?php
 
 /*

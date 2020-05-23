@@ -14,8 +14,8 @@ get_header();
 		<div class="container">
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h2 class="page-title"><?php esc_html_e( 'К сожалению! Эта страница не может быть найдена.', 'schoolstudy' ); ?></h2>
-					<a href="<?php echo get_home_url(); ?>">Вернутся на главную</a>
+					<h2 class="page-title"><?php esc_html_e( 'На жаль сторінка не знайдена!', 'schoolstudy' ); ?></h2>
+					<a href="<?php echo get_home_url(); ?>">Повернутися на головну</a>
 				</header>
 
 			</section>

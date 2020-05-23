@@ -23,9 +23,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @hooked WC_Emails::email_header() Output the email header
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
-
 <?php /* translators: %s: Customer first name */ ?>
-<p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
+<p><?php printf( esc_html__( 'Доброго дня, %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
+Ваше замовлення наразі опрацьовується.
 <?php /* translators: %s: Order number */ ?>
 <p><?php printf( esc_html__( 'Просто чтобы вы знали - мы получили ваш заказ #%s, и сейчас он обрабатывается:', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
 
@@ -54,9 +54,9 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 
 ?>
 
-<p>
-<?php esc_html_e( 'Thanks!', 'woocommerce' ); ?>
-</p>
+<p><b>
+<?php esc_html_e( 'Якщо у Вас є питання, Ви можете написати нам на пошту - office@orphan-club.com або зателефонувати за номером телефону +3 8 067 820 75 50', 'woocommerce' ); ?>
+</p></b>
 <?php
 
 /*
