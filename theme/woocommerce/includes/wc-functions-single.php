@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 //--------------------------------------------single_price--------------------------------
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+	// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 
 //--------------------------------------------single_form--------------------------------
 	// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );

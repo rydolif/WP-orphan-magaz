@@ -1382,11 +1382,15 @@ div.wpcf7-mail-sent-ok
 		margin-bottom: 30px
 		line-height: 1.6
 
+		.wp-block-group__inner-container
+			padding: 0
+			margin-bottom: 0
+
 	.wp-block-columns
 		margin-bottom: 0
 
-	img
-		margin-bottom: 30px
+	// img
+	// 	margin-bottom: 30px
 
 .grums
 	margin-bottom: 25px
@@ -1431,24 +1435,47 @@ div.wpcf7-mail-sent-ok
 
 	&__list
 		display: flex
-		justify-content: space-around
 		flex-wrap: wrap
+		align-items: stretch
 
 	&__item
 		width: 32%
+		margin-right: 1%
 		margin-bottom: 15px
+		background-color: #f2f5f8
+		border-bottom-right-radius: 15px
+		border-bottom-left-radius: 15px
 
-		img
+		&_img
+			overflow: hidden
+			display: block
+			position: relative
 			width: 100%
-			height: auto
+			padding-top: 60%
+			transition: all .6s
+
+			&:hover,
+			&:focus
+				img
+					transform: translate(-50%, -50%) scale(1.1)
+
+			img
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 100%
+				height: auto
+				min-height: 100%
+				margin: 0 auto
+				transition: all .6s
 
 	&__excerpt
 		margin-bottom: 10px
 
 	&__content
 		padding: 15px
-		background-color: #f2f5f8
-		border-radius: 15px
 
 	time
 		margin-bottom: 10px
@@ -1635,6 +1662,15 @@ div.wpcf7-mail-sent-ok
 .tinv-wishlist .tinvwl-buttons-group button i.ftinvwl-times::before
 	top: 0
 
+.tinv-wishlist .product-action .button
+	min-width: 100%
+
+.tinv-wishlist
+	.tinv-prev,
+	.tinv-next
+		display: flex
+		flex-direction: row
+		justify-content: center
 
 //------------------------------single---------------------------------
 .related
@@ -1658,10 +1694,15 @@ div.wpcf7-mail-sent-ok
 		font-size: 30px
 		text-transform: uppercase
 		color: #252525
-		margin-bottom: 55px
+		margin-bottom: 15px
+
+	.popular__item_price
+		margin-bottom: 40px
+		font-weight: 700
+		font-size: 22px
 			
 	&__content
-		margin-bottom: 80px
+		margin-bottom: 40px
 
 
 	&__info_price
