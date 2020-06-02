@@ -629,9 +629,8 @@
 	&:hover,
 	&:focus
 		.cart__img
-			img
-				margin-top: -30px
-				margin-bottom: 30px
+			div
+				transform: translate(0, -30px)
 
 		.tinv-wraper
 			margin-top: -30px
@@ -646,11 +645,21 @@
 		margin-bottom: 15px
 		transition: all .6s
 
-		img
-			width: 100%
+		div
+			position: relative
+			overflow: hidden
+			display: flex
+			justify-content: center
+			align-items: center
+			min-width: 100%
 			border-radius: 15px
 			transition: all .6s
 			height: 390px
+
+		img
+			transition: all .6s
+			width: 100%
+
 
 	&__price
 		font-size: 24px

@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 
 			<a href="<?php the_permalink(); ?>" class="cart__img">
-				<img src="<?php the_post_thumbnail_url(); ?>" alt="">
+				<div><img src="<?php the_post_thumbnail_url(); ?>" alt=""></div>
 			</a>
 
 		<?php
