@@ -11,7 +11,9 @@ function custom_override_billing_fields( $fields ) {
   // unset($fields['billing_last_name']);
   // unset($fields['billing_phone']);
   // unset($fields['billing_email']);
+  unset($fields['billing_city']);
   unset($fields['billing_company']);
+  // unset($fields['billing_address_1']);
   // unset($fields['billing_address_2']);
   unset($fields['billing_state']);
   unset($fields['billing_country']);

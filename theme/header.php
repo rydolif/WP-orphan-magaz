@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" href="<?php the_field('favicon', 'option'); ?>">
 	<meta name="theme-color" content="#000">
+	<meta name="google-site-verification" content="LE4qLAARrEAm_1juKqD1r2dUSeXYNjgJQgJGOxirDsA" />
 
 </head>
 

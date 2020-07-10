@@ -234,3 +234,35 @@ require get_template_directory() . '/includes/post-type.php';
     remove_action('wp_head','feed_links', 2); // минус ссылки на основной rss и комментарии
     remove_action('wp_head','rsd_link');  // сервис Really Simple Discovery
     remove_action('wp_head','wlwmanifest_link'); // Windows Live Writer
+
+
+
+//------------------перевод нова почта ----------------------
+
+	// 	add_filter('wc_ukr_shipping_get_nova_poshta_translates', function ($translates) {
+	// 		$currentLanguage = wp_doing_ajax() ? $_COOKIE['pll_language'] : pll_current_language();
+		
+	// 		if ($currentLanguage === 'uk') {
+	// 				// Возвращаем украинские переводы
+	// 				return [
+	// 						'method_title' => 'Нова Пошта',
+	// 						'block_title' => 'Вкажіть відділення доставки',
+	// 						'placeholder_area' => 'Оберіть область',
+	// 						'placeholder_city' => 'Оберіть місто',
+	// 						'placeholder_warehouse' => 'Оберіть відділення',
+	// 						'address_title' => 'Доставка кур\'ером',
+	// 						'address_placeholder' => 'Введіть адресу доставки'
+	// 				];
+	// 		}
+		
+	// 		// Возвращаем русские переводы
+	// 		return [
+	// 				'method_title' => 'Новая почта',
+	// 				'block_title' => 'Укажите отделение доставки',
+	// 				'placeholder_area' => 'Выберите область',
+	// 				'placeholder_city' => 'Выберите город',
+	// 				'placeholder_warehouse' => 'Выберите отделение',
+	// 				'address_title' => 'Доставка курьером',
+	// 				'address_placeholder' => 'Введите адрес доставки'
+	// 		];
+	// });
