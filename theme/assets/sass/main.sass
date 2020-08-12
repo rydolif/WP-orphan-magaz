@@ -2073,7 +2073,55 @@ div.wpcf7-mail-sent-ok
 	width: 100%
 
 
+.woocommerce-input-wrapper
+	label
+		position: relative
+		padding-left: 50px
+		color: $accent
+		cursor: pointer
+		margin-bottom: 0
+		margin-right: 0
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+
+		&::before
+			width: 15px
+			height: 15px
+			border-radius: 3px
+			border: 1px solid $accent
+
+		&::after
+			width: 9px
+			height: 9px
+			border-radius: 3px
+			border: 1px solid $accent
+			background: $accent
+			left: 3px
+			top: 3px
+			transition: all .6s
+
+	input[type="radio"]
+		display: none
+
+	input[type="radio"]:checked + label::after
+		transform: scale(1)
+
+	input[type="radio"] + label::after
+		transform: scale(0)
 
 
+
+#shipping_option
+	opacity: 0
+
+.in-stock
+	font-size: 22px
+	font-weight: 700
+	margin-bottom: 15px
+	padding-left: 15px
 
 @import "media" // Always at the end
