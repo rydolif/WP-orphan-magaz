@@ -2,7 +2,7 @@
 //------------------додавання css + js ----------------------
   function ewa_scripts() {
     //---------------css---------------------
-    wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main.min.css' );
+    wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/main7.css' );
     //---------------js---------------------
     wp_enqueue_script( 'main-sctipt', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '', true );
     

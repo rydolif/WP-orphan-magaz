@@ -78,3 +78,16 @@ $(function() {
 // $(window).on('load', function(){
 //   $('.preloader').delay(1000).fadeOut('slow');
 // });
+
+//---------------------------js-----------------------
+  $('.tabs__wrap').hide();
+  $('.tabs__wrap:first').show();
+  $('.tabs ul a:first').addClass('modal__active');
+  $('.tabs ul a').click(function(event){
+    event.preventDefault();
+    $('.tabs ul a').removeClass('modal__active');
+    $(this).addClass('modal__active');
+    $('.tabs__wrap').hide();
+    var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });

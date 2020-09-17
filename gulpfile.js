@@ -107,7 +107,7 @@ gulp.task('rsync', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('theme/assets/sass/**/*.sass', gulp.parallel('styles'));
-	gulp.watch(['assets/libs/**/*.js', 'theme/assets/js/_custom.js'], gulp.parallel('scripts'));
+	gulp.watch(['theme/assets/libs/**/*.js', 'theme/assets/js/_custom.js'], gulp.parallel('scripts'));
 	gulp.watch('theme/assets/*.php', gulp.parallel('code'));
 	gulp.watch('theme/assets/img/_src/**/*', gulp.parallel('img'));
 });

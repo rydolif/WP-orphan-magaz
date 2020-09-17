@@ -1520,8 +1520,32 @@ div.wpcf7-mail-sent-ok
 //----------------profile----------------
 
 .woocommerce .login
-	padding: 0
-	margin-bottom: 0
+	padding: 40px 85px !important
+	margin-bottom: 0 !important
+
+.cabinet
+
+	.tabs__link--active
+		@extend .modal__active
+
+	.tabs
+		&__wrap
+			padding: 40px 85px
+			margin-bottom: 0
+
+		ul
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: center
+
+		.active
+			background-color: #b5cec8
+			font-weight: 700
+
+	.active
+		@extend .modal__active
+
 
 .page-form
 	position: relative
@@ -1694,6 +1718,7 @@ div.wpcf7-mail-sent-ok
 
 	.cart
 		width: 25%
+
 
 .single
 	padding: 40px 0
@@ -1908,12 +1933,15 @@ div.wpcf7-mail-sent-ok
 		justify-content: space-between
 		flex-wrap: wrap
 
+
 .variations
 	margin-bottom: 40px
-	
+
+
 .single_variation_wrap
 	button
 		padding: 0 25px
+
 
 .reset_variations
 	position: absolute
@@ -1989,6 +2017,7 @@ div.wpcf7-mail-sent-ok
 	input[type="radio"] + label::after
 		transform: scale(0)
 
+
 .wc_payment_methods
 	font-size: 12px
 
@@ -2036,6 +2065,7 @@ div.wpcf7-mail-sent-ok
 	.select2-container.select2-container--open .select2-dropdown
 		border-radius: 20px !important
 
+
 .wc_payment_method
 	text-align: left
 
@@ -2044,7 +2074,7 @@ div.wpcf7-mail-sent-ok
 	li
 		p
 			display: none
-			
+
 
 .partners
 	text-align: center
@@ -2114,7 +2144,6 @@ div.wpcf7-mail-sent-ok
 		transform: scale(0)
 
 
-
 #shipping_option
 	opacity: 0
 
@@ -2123,5 +2152,14 @@ div.wpcf7-mail-sent-ok
 	font-weight: 700
 	margin-bottom: 15px
 	padding-left: 15px
+
+
+input[type=image]
+	padding: 0 !important
+	width: auto !important
+
+
+
+
 
 @import "media" // Always at the end
